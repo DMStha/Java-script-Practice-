@@ -14,12 +14,28 @@ person2 = "shyam";
 
 console.log(person2);
 
-//chapter 2
+//chapter 2 interactions
 
 //alert("Username and password is wrong");
-const userName = prompt("enter your user name ");
-const password = prompt("enter your password");
+// const userName = prompt("enter your user name ");
+// const password = prompt("enter your password");
 
-if ((userName === "Diom") & (password === "1234")) {
-  alert("welcome ton our website");
+// if ((userName === "Diom") & (password === "1234")) {
+//   alert("welcome ton our website");
+// }
+//prompt
+//conform
+
+// chapter 3 Operators
+
+let hour = 17;
+
+if (hour > 14 || hour < 18) {
+  alert("JS class is running ");
+}
+
+const isValid = true;
+
+if (!isValid) {
+  alert("it is not valid");
 }
