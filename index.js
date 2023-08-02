@@ -28,14 +28,31 @@ console.log(person2);
 
 // chapter 3 Operators
 
-let hour = 17;
+// let hour = 17;
 
-if (hour > 14 || hour < 18) {
-  alert("JS class is running ");
-}
+// if (hour > 14 || hour < 18) {
+//   alert("JS class is running ");
+// }
 
-const isValid = true;
+// const isValid = true;
 
-if (!isValid) {
-  alert("it is not valid");
-}
+// if (!isValid) {
+//   alert("it is not valid");
+// }
+
+//conditionals
+
+const a = 15;
+const b = 15;
+
+let c = a / b;
+
+// if ((c = 1)) {
+//   alert("c is equal to 1");
+// } else {
+//   alert("c is not equal to 1");
+// }
+
+//ternary operator
+
+c = 1 ? alert("c is equal to 1") : alert("c is not equal to 1");
