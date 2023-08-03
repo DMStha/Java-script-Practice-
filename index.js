@@ -42,10 +42,10 @@ console.log(person2);
 
 //conditionals
 
-const a = 15;
-const b = 15;
+// const a = 15;
+// const b = 15;
 
-let c = a / b;
+// let c = a / b;
 
 // if ((c = 1)) {
 //   alert("c is equal to 1");
@@ -55,4 +55,25 @@ let c = a / b;
 
 //ternary operator
 
-c = 1 ? alert("c is equal to 1") : alert("c is not equal to 1");
+// c = 1 ? alert("c is equal to 1") : alert("c is not equal to 1");
+
+//loops
+// for loop
+
+// for (let a = 0; a <= 10; a++) {
+//   console.log(a);
+// }
+
+// let a = 0;
+
+// while (a <= 10) {
+//   console.log(a);
+
+//   a++;
+// }
+
+let x = 0;
+do {
+  console.log(x);
+  x++;
+} while (x <= 15);
