@@ -93,16 +93,19 @@ console.log(person2);
 //es5
 //function hello(){}
 
-const hello = () => {
-  console.log("hello");
-  console.log("hello to the user");
-};
+// const hello = () => {
+//   console.log("hello");
+//   console.log("hello to the user");
+// };
 
-hello();
+// hello();
 
-const sum = (a, b) => {
-  return a + b;
-};
+// const sum = (a, b) => {
+//   return a + b;
+// };
 
-const result = sum(5, 6);
-console.log(result);
+// const result = sum(5, 6);
+// console.log(result);
+
+const age = Number(prompt("enter your age"));
+console.log(age);
