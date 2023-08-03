@@ -101,8 +101,8 @@ const hello = () => {
 hello();
 
 const sum = (a, b) => {
-  let c = a + b;
-  console.log(c);
+  return a + b;
 };
 
-sum(50, 16);
+const result = sum(5, 6);
+console.log(result);
