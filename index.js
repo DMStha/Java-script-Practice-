@@ -107,5 +107,20 @@ console.log(person2);
 // const result = sum(5, 6);
 // console.log(result);
 
-const age = Number(prompt("enter your age"));
-console.log(age);
+// const age = Number(prompt("enter your age"));
+// console.log(age);
+
+//Write a JavaScript program to get the current date.
+
+let currentDay = function (sp) {
+  today = new Date();
+  let dd = today.getDate();
+  let mm = today.getMonth() + 1; //As January is 0.
+  let yyyy = today.getFullYear();
+
+  if (dd < 10) dd = "0" + dd;
+  if (mm < 10) mm = "0" + mm;
+  return mm + sp + dd + sp + yyyy;
+};
+console.log(currentDay("/"));
+console.log(currentDay("-"));
