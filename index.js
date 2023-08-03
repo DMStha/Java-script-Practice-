@@ -80,10 +80,29 @@ console.log(person2);
 
 //Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
 
-let x = 12;
+// let x = 12;
 
-if (x % 3 == 0 || x % 7 == 0) {
-  console.log("x is a multiple of 3 or 7");
-} else {
-  console.log("x is not a multiple of 3 or 7");
-}
+// if (x % 3 == 0 || x % 7 == 0) {
+//   console.log("x is a multiple of 3 or 7");
+// } else {
+//   console.log("x is not a multiple of 3 or 7");
+// }
+
+//functions
+
+//es5
+//function hello(){}
+
+const hello = () => {
+  console.log("hello");
+  console.log("hello to the user");
+};
+
+hello();
+
+const sum = (a, b) => {
+  let c = a + b;
+  console.log(c);
+};
+
+sum(50, 16);
