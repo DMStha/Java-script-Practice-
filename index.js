@@ -127,14 +127,29 @@
 
 /// objects (real life object, properties and methods)
 
-const person = {
-  firstName: "John",
-  lastName: "Wick",
+// const person = {
+//   firstName: "John",
+//   lastName: "Wick",
 
-  fullName: () => {
-    return person.firstName + " " + person.lastName;
+//   fullName: () => {
+//     return person.firstName + " " + person.lastName;
+//   },
+// };
+
+// const name = person.fullName();
+// console.log(name);
+
+const laptop = {
+  brand: "Dell",
+  produceName: "thinkpad",
+  yearAssembled: 2017,
+  ramInGb: 12,
+  generation: 10,
+  doesWork: () => {
+    return laptop?.brand === "Dell" && laptop.ramInGb >= 10
+      ? console.log("this device is compatable with the game ")
+      : console.log("this device is not compatable");
   },
 };
 
-const name = person.fullName();
-console.log(name);
+let pubG = laptop.doesWork();
