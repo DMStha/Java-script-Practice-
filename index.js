@@ -1,18 +1,18 @@
-console.log("hello");
+// console.log("hello");
 
-//ES5
-var ram = "person";
+// //ES5
+// var ram = "person";
 
-ram = "shyam";
+// ram = "shyam";
 
-console.log("ram");
+// console.log("ram");
 
-//ES6
+// //ES6
 
-let person2 = "Ram";
-person2 = "shyam";
+// let person2 = "Ram";
+// person2 = "shyam";
 
-console.log(person2);
+// console.log(person2);
 
 //chapter 2 interactions
 
@@ -112,15 +112,29 @@ console.log(person2);
 
 //Write a JavaScript program to get the current date.
 
-let currentDay = function (sp) {
-  today = new Date();
-  let dd = today.getDate();
-  let mm = today.getMonth() + 1; //As January is 0.
-  let yyyy = today.getFullYear();
+// let currentDay = function (sp) {
+//   today = new Date();
+//   let dd = today.getDate();
+//   let mm = today.getMonth() + 1; //As January is 0.
+//   let yyyy = today.getFullYear();
 
-  if (dd < 10) dd = "0" + dd;
-  if (mm < 10) mm = "0" + mm;
-  return mm + sp + dd + sp + yyyy;
+//   if (dd < 10) dd = "0" + dd;
+//   if (mm < 10) mm = "0" + mm;
+//   return mm + sp + dd + sp + yyyy;
+// };
+// console.log(currentDay("/"));
+// console.log(currentDay("-"));
+
+/// objects (real life object, properties and methods)
+
+const person = {
+  firstName: "John",
+  lastName: "Wick",
+
+  fullName() {
+    return this.firstName + " " + this.lastName;
+  },
 };
-console.log(currentDay("/"));
-console.log(currentDay("-"));
+
+const name = person.fullName();
+console.log(name);
