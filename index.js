@@ -131,8 +131,8 @@ const person = {
   firstName: "John",
   lastName: "Wick",
 
-  fullName() {
-    return this.firstName + " " + this.lastName;
+  fullName: () => {
+    return person.firstName + " " + person.lastName;
   },
 };
 
