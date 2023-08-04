@@ -147,7 +147,7 @@ const laptop = {
   generation: 10,
   doesWork: () => {
     return laptop?.brand === "Dell" && laptop.ramInGb >= 10
-      ? console.log("this device is compatable with the game ")
+      ? console.log("this device is compatible with the game ")
       : console.log("this device is not compatable");
   },
 };
