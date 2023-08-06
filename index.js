@@ -161,9 +161,9 @@ const persons = [
   { name: "john", age: 6 },
 ];
 
+// sort in ascending order of persons array by age
+
 const age = persons.sort((a, b) => {
   return a.age - b.age;
 });
 console.log(age);
-
-// sort in ascending order of persons array by age
