@@ -163,7 +163,21 @@ const persons = [
 
 // sort in ascending order of persons array by age
 
-const age = persons.sort((a, b) => {
-  return a.age - b.age;
+// const age = persons.sort((a, b) => {
+//   return a.age - b.age;
+// });
+// console.log(age);
+
+const personFunction = (person) => {
+  return persons.name;
+};
+
+const newPerson2 = persons.map(personFunction); //starting
+
+const newPersons = persons.map((persons) => {
+  return persons.name; //2nd step
 });
-console.log(age);
+
+const newPerson = persons.map((person) => person.name);
+
+console.log(persons, newPerson, newPerson2, newPersons);
