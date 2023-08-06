@@ -139,17 +139,31 @@
 // const name = person.fullName();
 // console.log(name);
 
-const laptop = {
-  brand: "Dell",
-  produceName: "thinkpad",
-  yearAssembled: 2017,
-  ramInGb: 12,
-  generation: 10,
-  doesWork: () => {
-    return laptop?.brand === "Dell" && laptop.ramInGb >= 10
-      ? console.log("this device is compatible with the game ")
-      : console.log("this device is not compatable");
-  },
-};
+// const laptop = {
+//   brand: "Dell",
+//   produceName: "thinkpad",
+//   yearAssembled: 2017,
+//   ramInGb: 12,
+//   generation: 10,
+//   doesWork: () => {
+//     return laptop?.brand === "Dell" && laptop.ramInGb >= 10
+//       ? console.log("this device is compatible with the game ")
+//       : console.log("this device is not compatible");
+//   },
+// };
 
-let pubG = laptop.doesWork();
+// let pubG = laptop.doesWork();
+
+//  array
+const persons = [
+  { name: "ram", age: 25 },
+  { name: "wick", age: 30 },
+  { name: "john", age: 6 },
+];
+
+const age = persons.sort((a, b) => {
+  return a.age - b.age;
+});
+console.log(age);
+
+// sort in ascending order of persons array by age
