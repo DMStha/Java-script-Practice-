@@ -141,7 +141,7 @@
 
 // const laptop = {
 //   brand: "Dell",
-//   produceName: "thinkpad",
+//   produceName: "think pad",
 //   yearAssembled: 2017,
 //   ramInGb: 12,
 //   generation: 10,
@@ -181,3 +181,14 @@ const newPersons = persons.map((persons) => {
 const newPerson = persons.map((person) => person.name);
 
 console.log(persons, newPerson, newPerson2, newPersons);
+
+//JS Good Practices
+
+// Avoid Global Variables
+// Always Declare Local Variables
+// Declarations on Top
+// Initialize Variables
+// Declare Objects with const
+// Declare Arrays with const
+// Use === Comparison
+// Use Parameter Defaults while using functions
