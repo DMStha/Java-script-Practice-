@@ -155,11 +155,11 @@
 // let pubG = laptop.doesWork();
 
 //  array
-const persons = [
-  { name: "ram", age: 25 },
-  { name: "wick", age: 30 },
-  { name: "john", age: 6 },
-];
+// const persons = [
+//   { name: "ram", age: 25 },
+//   { name: "wick", age: 30 },
+//   { name: "john", age: 6 },
+// ];
 
 // sort in ascending order of persons array by age
 
@@ -168,19 +168,19 @@ const persons = [
 // });
 // console.log(age);
 
-const personFunction = (person) => {
-  return persons.name;
-};
+// const personFunction = (person) => {
+//   return persons.name;
+// };
 
-const newPerson2 = persons.map(personFunction); //starting
+// const newPerson2 = persons.map(personFunction); //starting
 
-const newPersons = persons.map((persons) => {
-  return persons.name; //2nd step
-});
+// const newPersons = persons.map((persons) => {
+//   return persons.name; //2nd step
+// });
 
-const newPerson = persons.map((person) => person.name);
+// const newPerson = persons.map((person) => person.name);
 
-console.log(persons, newPerson, newPerson2, newPersons);
+// console.log(persons, newPerson, newPerson2, newPersons);
 
 //JS Good Practices
 
@@ -192,3 +192,16 @@ console.log(persons, newPerson, newPerson2, newPersons);
 // Declare Arrays with const
 // Use === Comparison
 // Use Parameter Defaults while using functions
+
+// Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum.
+
+let a;
+let b;
+let c = a + b;
+
+const valueSum = (a, b) => {
+  return a == b ? 3 * a : a + b;
+};
+
+const abc = valueSum(6, 5);
+console.log(abc);
