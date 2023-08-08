@@ -195,13 +195,15 @@
 
 // Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum.
 
-let a;
-let b;
-let c = a + b;
+// let a;
+// let b;
+// let c = a + b;
 
-const valueSum = (a, b) => {
-  return a == b ? 3 * a : a + b;
-};
+// const valueSum = (a, b) => {
+//   return a == b ? 3 * a : a + b;
+// };
 
-const abc = valueSum(6, 5);
-console.log(abc);
+// const abc = valueSum(6, 5);
+// console.log(abc);
+
+//app
