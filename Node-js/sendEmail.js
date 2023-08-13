@@ -8,8 +8,6 @@
 "use strict";
 const nodemailer = require("nodemailer");
 const handlebars = require("handlebars");
-const 
-
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
