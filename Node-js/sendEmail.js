@@ -1,46 +1,50 @@
-/* 
- Plan of Action
-1. send email to user saying "hello world" 
-2. send email to multiple users 
-3. email template (designed template )
+/*
+Plan of Action:
+1. Send email to user saying 'hello world' (DONE)
+2. Send email to multiple users by creating email function (DONE)
+3. email template (designed template) >> Get the email templates by searching in the google
+
 */
 
-"use strict";
 const nodemailer = require("nodemailer");
 const handlebars = require("handlebars");
+const { promisify } = require("util");
+const fs = require("fs");
+
+const readFile = promisify(fs.readFile);
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   secure: true,
   auth: {
-    // TODO: replace `user` and `pass` values from <https://forwardemail.net>
     user: "diomhresth2000@gmail.com",
     pass: "vmvihxsfdjgmcokn",
   },
 });
 
-// async..await is not allowed in global scope, must use a wrapper
-async function main() {
-  // send mail with defined transport object
+async function main(receivers, data, htmlFile) {
+  const html = await readFile(htmlFile, "utf8");
+  const template = handlebars.compile(html);
+
+  const htmlToSend = template(data);
+
   const info = await transporter.sendMail({
-    from: '"Diom Shrestha" <diomhresth2000@gmail.com>', // sender address
+    from: '"Diom Shrestha " <diomhresth2000@gmail.com>', // sender address
     to: receivers.toString(), // list of receivers
     subject: "Hello ✔", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
+    html: htmlToSend,
   });
 
   console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-  //
-  // NOTE: You can go to https://forwardemail.net/my-account/emails to see your email delivery status and preview
-  //       Or you can use the "preview-email" npm package to preview emails locally in browsers and iOS Simulator
-  //       <https://github.com/forwardemail/preview-email>
-  //
 }
 
+// Change here
+const data = {
+  name: "Diom Shrestha",
+  msg: "How are you??",
+  s,
+};
+const htmlFile = "./email.html";
 const receivers = ["diomhresth2000@gmail.com"];
-
-main().catch(console.error);
+main(receivers, data, htmlFile).catch(console.error);
