@@ -1,0 +1,9 @@
+const express = require("express");
+const app = express();
+
+app.get("/", function (req, res) {
+  res.send("Hello Worlds diom");
+});
+
+app.listen(3000);
+console.log("app started on port 3000");
