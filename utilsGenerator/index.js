@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 
-app.get("/", function (req, res) {
-  res.send("Hello Worlds diom");
+app.get("/:name/:lastName", function (req, res) {
+  const { name, lastName } = req.params;
+  res.send(`hello world form ${name} ${lastName}`);
 });
 
 app.listen(3000);
