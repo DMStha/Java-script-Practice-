@@ -35,30 +35,30 @@
 // console.log(countDigits(0)); // Output: 1
 
 // Write a java script function that takes a number and returns the perimeter of either a circle or a square. The input will be in the form (letter l, number num) where the letter will be either "s" for square, or "c" for circle, and the number will be the side of the square or the radius of the circle.
-function calculatePerimeter(input) {
-  const letter = input.charAt(0);
-  const num = parseFloat(input.substr(2));
+// function calculatePerimeter(input) {
+//   const letter = input.charAt(0);
+//   const num = parseFloat(input.substr(2));
 
-  if (isNaN(num)) {
-    return "Invalid input. Please provide a valid number.";
-  }
+//   if (isNaN(num)) {
+//     return "Invalid input. Please provide a valid number.";
+//   }
 
-  if (letter === "s") {
-    if (num <= 0) {
-      return "Invalid side length for square. Please provide a positive number.";
-    }
-    return 4 * num; // Perimeter of a square: 4 * side
-  } else if (letter === "c") {
-    if (num <= 0) {
-      return "Invalid radius for circle. Please provide a positive number.";
-    }
-    return 2 * Math.PI * num; // Perimeter of a circle: 2 * π * radius
-  } else {
-    return "Invalid shape letter. Please use 's' for square or 'c' for circle.";
-  }
-}
+//   if (letter === "s") {
+//     if (num <= 0) {
+//       return "Invalid side length for square. Please provide a positive number.";
+//     }
+//     return 4 * num; // Perimeter of a square: 4 * side
+//   } else if (letter === "c") {
+//     if (num <= 0) {
+//       return "Invalid radius for circle. Please provide a positive number.";
+//     }
+//     return 2 * Math.PI * num; // Perimeter of a circle: 2 * π * radius
+//   } else {
+//     return "Invalid shape letter. Please use 's' for square or 'c' for circle.";
+//   }
+// }
 
-// Example usage
-console.log(calculatePerimeter("s 5")); // Output: 20 (perimeter of a square with side length 5)
-console.log(calculatePerimeter("c 3")); // Output: 18.84955592153876 (perimeter of a circle with radius 3)
-console.log(calculatePerimeter("t 2")); // Output: Invalid shape letter. Please use 's' for square or 'c' for circle.
+// // Example usage
+// console.log(calculatePerimeter("s 5")); // Output: 20 (perimeter of a square with side length 5)
+// console.log(calculatePerimeter("c 3")); // Output: 18.84955592153876 (perimeter of a circle with radius 3)
+// console.log(calculatePerimeter("t 2")); // Output: Invalid shape letter. Please use 's' for square or 'c' for circle.
