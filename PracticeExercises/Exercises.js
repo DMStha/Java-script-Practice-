@@ -62,3 +62,26 @@
 // console.log(calculatePerimeter("s 5")); // Output: 20 (perimeter of a square with side length 5)
 // console.log(calculatePerimeter("c 3")); // Output: 18.84955592153876 (perimeter of a circle with radius 3)
 // console.log(calculatePerimeter("t 2")); // Output: Invalid shape letter. Please use 's' for square or 'c' for circle.
+
+// Write a function that takes an array of objects and sorts them based on a specific property.
+function sortByProperty(arr, property) {
+  // Check if the property exists in the first object of the array
+  if (arr.length > 0 && arr[0].hasOwnProperty(property)) {
+    // Use the sort() method to sort the array based on the specified property
+    arr.sort((a, b) => (a[property] > b[property] ? 1 : -1));
+  } else {
+    // Handle the case where the property does not exist in the objects
+    console.error(`Property '${property}' does not exist in the objects.`);
+  }
+}
+
+// Example usage:
+const people = [
+  { name: "Ana", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Char", age: 35 },
+];
+
+// Sort the array of objects by age
+sortByProperty(people, "age");
+console.log(people); // Output will be sorted by age
