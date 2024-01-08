@@ -207,3 +207,6 @@
 // console.log(abc);
 
 //app
+
+console.log("5" === 5); // here its is false as the number is equal but the data types are as one is string and one is number
+console.log(5 === 5); // here its true as both data types and the numbers are same
