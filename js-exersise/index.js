@@ -229,16 +229,16 @@
 // let result = num < 0 ? "negative number" : num > 0 ? "positive number" : "zero";
 // console.log(result);
 
-let x = 61;
-let y = 61;
-let z = 61;
+// let x = 61;
+// let y = 61;
+// let z = 61;
 
-let result =
-  x < y && y > z
-    ? "y is greatest "
-    : x > y && x > z
-    ? "x is greater"
-    : z > x && z > y
-    ? "z is greatest"
-    : "all are equal";
-console.log(result);
+// let result =
+//   x < y && y > z
+//     ? "y is greatest "
+//     : x > y && x > z
+//     ? "x is greater"
+//     : z > x && z > y
+//     ? "z is greatest"
+//     : "all are equal";
+// console.log(result);
