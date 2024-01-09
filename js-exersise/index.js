@@ -224,7 +224,21 @@
 // let result = number % 2 === 0 ? "Even" : "Odd";
 // console.log(result);
 
-let num = 0;
+// let num = 55;
 
-let result = num < 0 ? "negative number" : num > 0 ? "positive number" : "zero";
+// let result = num < 0 ? "negative number" : num > 0 ? "positive number" : "zero";
+// console.log(result);
+
+let x = 61;
+let y = 61;
+let z = 61;
+
+let result =
+  x < y && y > z
+    ? "y is greatest "
+    : x > y && x > z
+    ? "x is greater"
+    : z > x && z > y
+    ? "z is greatest"
+    : "all are equal";
 console.log(result);
