@@ -220,6 +220,11 @@
 // console.log(a > b && c <= d);
 // console.log(a + b < c || d * a > c);
 
-let number = 55;
-let result = number % 2 === 0 ? "Even" : "Odd";
+// let number = 55;
+// let result = number % 2 === 0 ? "Even" : "Odd";
+// console.log(result);
+
+let num = 0;
+
+let result = num < 0 ? "negative number" : num > 0 ? "positive number" : "zero";
 console.log(result);
