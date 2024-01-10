@@ -92,23 +92,23 @@ console.log(people); // Output will be sorted by age
 //Based upon the value of the option. Perform appropriate operation.
 //e.g. if option is “add”, perform num1+num2
 
-let num1 = 5;
-let num2 = 6;
+// let num1 = 5;
+// let num2 = 6;
 
-let option = "add";
+// let option = "add";
 
-let result =
-  option === "add"
-    ? num1 + num2
-    : option === "subtract"
-    ? num1 - num2
-    : option === "multiply"
-    ? num1 * num2
-    : option === "division"
-    ? num1 / num2
-    : "invalid";
+// let result =
+//   option === "add"
+//     ? num1 + num2
+//     : option === "subtract"
+//     ? num1 - num2
+//     : option === "multiply"
+//     ? num1 * num2
+//     : option === "division"
+//     ? num1 / num2
+//     : "invalid";
 
-console.log(result);
+// console.log(result);
 
 // if (option === "add") {
 //   console.log(num1 + num2);
@@ -123,3 +123,27 @@ console.log(result);
 // } else {
 //   console.log("invalid");
 // }
+
+// Find grades for student marks.
+// If the mark is greater than or equal to 90, the grade is “A plus”.
+// If the mark is greater than or equal to 80,the grade is “A”.
+//  Grade “B”  from marks greater than equal to 70.
+// “C” for marks greater than equal to 60.
+// “F” for marks  less than 60.
+
+let marks = 70;
+
+let result =
+  marks > 100 && marks < 0
+    ? "out of range"
+    : marks >= 90 && marks <= 100
+    ? " A+"
+    : marks >= 80 && marks < 90
+    ? "A"
+    : marks >= 70 && marks < 80
+    ? "B"
+    : marks >= 60 && marks < 70
+    ? "C"
+    : "F";
+
+console.log(result);
