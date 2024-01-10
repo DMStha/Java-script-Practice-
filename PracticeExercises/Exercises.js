@@ -63,6 +63,7 @@
 // console.log(calculatePerimeter("c 3")); // Output: 18.84955592153876 (perimeter of a circle with radius 3)
 // console.log(calculatePerimeter("t 2")); // Output: Invalid shape letter. Please use 's' for square or 'c' for circle.
 
+/*
 // Write a function that takes an array of objects and sorts them based on a specific property.
 function sortByProperty(arr, property) {
   // Check if the property exists in the first object of the array
@@ -85,3 +86,40 @@ const people = [
 // Sort the array of objects by age
 sortByProperty(people, "age");
 console.log(people); // Output will be sorted by age
+*/
+
+//Perform arithmetic operation based on the option provided. Set two variables with numbers. Create another variable called “option” which can be add/subtract/multiply/divide/power.
+//Based upon the value of the option. Perform appropriate operation.
+//e.g. if option is “add”, perform num1+num2
+
+let num1 = 5;
+let num2 = 6;
+
+let option = "add";
+
+let result =
+  option === "add"
+    ? num1 + num2
+    : option === "subtract"
+    ? num1 - num2
+    : option === "multiply"
+    ? num1 * num2
+    : option === "division"
+    ? num1 / num2
+    : "invalid";
+
+console.log(result);
+
+// if (option === "add") {
+//   console.log(num1 + num2);
+// } else if (option === "subtract") {
+//   console.log(num1 - num2);
+// } else if (option === "multiply") {
+//   console.log(num1 * num2);
+// } else if (option === "division") {
+//   console.log(num1 / num2);
+// } else if (option === "power") {
+//   console.log(num1 ^ num2);
+// } else {
+//   console.log("invalid");
+// }
