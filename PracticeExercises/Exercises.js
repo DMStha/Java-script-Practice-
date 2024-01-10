@@ -148,38 +148,54 @@ console.log(people); // Output will be sorted by age
 
 // console.log(result);
 
-let day = 1;
+// let day = 1;
 
-switch (day) {
-  case 1: {
-    console.log("Sunday");
-    break;
-  }
+// switch (day) {
+//   case 1: {
+//     console.log("Sunday");
+//     break;
+//   }
 
-  case 2: {
-    console.log("Monday");
+//   case 2: {
+//     console.log("Monday");
+//     break;
+//   }
+//   case 3: {
+//     console.log("Tuesday");
+//     break;
+//   }
+//   case 4: {
+//     console.log("Wednesday");
+//     break;
+//   }
+//   case 5: {
+//     console.log("Thursday");
+//     break;
+//   }
+//   case 6: {
+//     console.log("Friday");
+//     break;
+//   }
+//   case 7: {
+//     console.log("Saturday");
+//     break;
+//   }
+//   default:
+//     console.log("INVALID");
+// }
+
+// check if the provided number is odd or even using switch
+
+let num = 8;
+
+let remainder = num % 2;
+
+switch (remainder) {
+  case 0: {
+    console.log("number is even");
     break;
   }
-  case 3: {
-    console.log("Tuesday");
-    break;
+  default: {
+    console.log("number is odd");
   }
-  case 4: {
-    console.log("Wednesday");
-    break;
-  }
-  case 5: {
-    console.log("Thursday");
-    break;
-  }
-  case 6: {
-    console.log("Friday");
-    break;
-  }
-  case 7: {
-    console.log("Saturday");
-    break;
-  }
-  default:
-    console.log("INVALID");
 }
