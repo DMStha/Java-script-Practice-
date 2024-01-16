@@ -200,16 +200,73 @@ console.log(people); // Output will be sorted by age
 //   }
 // }
 
-// ? waf that calculates the factorial  of a number using arrow function
+// // ? waf that calculates the factorial  of a number using arrow function
 
-const getFactorial = (num) => {
-  let factorial = 1;
+// const getFactorial = (num) => {
+//   let factorial = 1;
 
-  for (let i = 1; i <= num; i++) {
-    factorial *= i;
-  }
-  return factorial;
+//   for (let i = 1; i <= num; i++) {
+//     factorial *= i;
+//   }
+//   return factorial;
+// };
+
+// const factorial = getFactorial(5);
+// console.log(factorial);
+//
+
+// object =>key value pair
+
+//primitive data types
+// string
+// boolean
+// number
+// undefined
+// null
+
+// non-primitive data types
+//object => key value pair
+//key is also called property
+
+// let student1 ={
+//   fName = "Diom",
+//   lName = "Shrestha",
+//   collage ="Broadway",
+//   age = 22,
+//   pAddress = "ktm",
+//   tAddress = "ktm",
+//   isMarried = false,
+//   isGraduated = null,
+//   height = undefined,
+
+// };
+
+//console.log(student1);
+
+//?CRUD
+// ?CRUD
+// C => Create/ Add
+// R => Read/ Retrieve
+// U => Update/Edit
+// D => Delete /Remove
+
+const courseDetails = {
+  name: "MERN",
+  duration: 90,
+  type: "Full stack",
+  numberOfStudents: 16,
 };
 
-const factorial = getFactorial(5);
-console.log(factorial);
+// ?Read operations
+// ?dot operator and square operator
+// console.log(courseDetails.name);
+// console.log(courseDetails.numberOfStudents);
+// console.log(courseDetails["duration"]);
+
+// console.log(courseDetails.type);
+// console.log(courseDetails["type"]);
+
+// ? Delete operation => removes specified property
+// delete courseDetails.type;
+delete courseDetails["type"];
+console.log(courseDetails);
