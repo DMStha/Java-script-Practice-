@@ -131,22 +131,22 @@ console.log(people); // Output will be sorted by age
 // “C” for marks greater than equal to 60.
 // “F” for marks  less than 60.
 
-let marks = 550;
+// let marks = 550;
 
-let result =
-  marks < 0 || marks > 100
-    ? "Out of range"
-    : marks >= 90 && marks <= 100
-    ? " A+"
-    : marks >= 80 && marks < 90
-    ? "A"
-    : marks >= 70 && marks < 80
-    ? "B"
-    : marks >= 60 && marks < 70
-    ? "C"
-    : "F";
+// let result =
+//   marks < 0 || marks > 100
+//     ? "Out of range"
+//     : marks >= 90 && marks <= 100
+//     ? " A+"
+//     : marks >= 80 && marks < 90
+//     ? "A"
+//     : marks >= 70 && marks < 80
+//     ? "B"
+//     : marks >= 60 && marks < 70
+//     ? "C"
+//     : "F";
 
-console.log(result);
+// console.log(result);
 
 // let day = 1;
 
@@ -199,3 +199,17 @@ console.log(result);
 //     console.log("number is odd");
 //   }
 // }
+
+// ? waf that calculates the factorial  of a number using arrow function
+
+const getFactorial = (num) => {
+  let factorial = 1;
+
+  for (let i = 1; i <= num; i++) {
+    factorial *= i;
+  }
+  return factorial;
+};
+
+const factorial = getFactorial(5);
+console.log(factorial);
