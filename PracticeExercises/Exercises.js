@@ -294,15 +294,15 @@ console.log(people); // Output will be sorted by age
 // || => pipe
 // && => ampersand
 
-const countryDetails = {
-  name: "Nepal",
-  states: 7,
-  district: 77,
-  localAdministration: 753,
-  isRepublic: true,
-  isSecular: true,
-  famousPlace: "Lumbini",
-};
+// const countryDetails = {
+//   name: "Nepal",
+//   states: 7,
+//   district: 77,
+//   localAdministration: 753,
+//   isRepublic: true,
+//   isSecular: true,
+//   famousPlace: "Lumbini",
+// };
 
 // //?read
 // console.log(countryDetails.name);
@@ -311,10 +311,48 @@ const countryDetails = {
 //upsert => update or insert
 // ?update
 
-countryDetails.name = "India";
+// countryDetails.name = "India";
 
 //? add
 
-countryDetails.continent = "Asia";
+// countryDetails.continent = "Asia";
 
-console.log(countryDetails);
+// console.log(countryDetails);
+
+const laptopDetails = {
+  name: " GF75 ",
+  brand: "MSI",
+  ram: 16,
+  ssd: 512,
+  display: 15.3,
+  graphics: "NVIDIA GeForce RTX 3060",
+  battery: "51 Whr",
+  processor: "i7 107OH",
+};
+
+// ? display laptop name with battery capacity
+
+console.log(laptopDetails.name);
+console.log(laptopDetails.battery);
+
+console.log(
+  `${laptopDetails.name} has ${laptopDetails.battery} battery capacity`
+);
+
+// ?change ram size to 18 gigs
+
+laptopDetails.ram = 18;
+
+// ?add another property called  memoryFrequency with 3200MHz value
+
+laptopDetails.memoryFrequency = "3200MHz";
+
+// ? add another property called weight whose value is 3kg
+
+laptopDetails.weight = "300GB";
+
+// ? update ssd size by 300 GB
+
+laptopDetails.ssd = "300GB";
+
+console.log(laptopDetails);
