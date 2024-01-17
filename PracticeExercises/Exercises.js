@@ -215,6 +215,18 @@ console.log(people); // Output will be sorted by age
 // console.log(factorial);
 //
 
+// ? WAF that accepts first name and last name as argument and returns full name
+
+// const getFullName = (firstName, lastName) => {
+//   let fullName = `${firstName} ${lastName}`;
+
+//   return fullName;
+// };
+
+// const getFullName = (firstName, lastName) => `${firstName} ${lastName}`;
+
+// const fullName = getFullName("Rohan", "Bhandari");
+// console.log(fullName);
 // object =>key value pair
 
 //primitive data types
@@ -250,12 +262,12 @@ console.log(people); // Output will be sorted by age
 // U => Update/Edit
 // D => Delete /Remove
 
-const courseDetails = {
-  name: "MERN",
-  duration: 90,
-  type: "Full stack",
-  numberOfStudents: 16,
-};
+// const courseDetails = {
+//   name: "MERN",
+//   duration: 90,
+//   type: "Full stack",
+//   numberOfStudents: 16,
+// };
 
 // ?Read operations
 // ?dot operator and square operator
@@ -268,5 +280,41 @@ const courseDetails = {
 
 // ? Delete operation => removes specified property
 // delete courseDetails.type;
-delete courseDetails["type"];
-console.log(courseDetails);
+// delete courseDetails["type"];
+// console.log(courseDetails);
+
+// " " => double quote
+// ''  => single quote
+// `` => back tick
+// ; => semi colon
+// : => colon
+//  , => comma
+//  / => slash (forward slash)
+// \ => back slash
+// || => pipe
+// && => ampersand
+
+const countryDetails = {
+  name: "Nepal",
+  states: 7,
+  district: 77,
+  localAdministration: 753,
+  isRepublic: true,
+  isSecular: true,
+  famousPlace: "Lumbini",
+};
+
+// //?read
+// console.log(countryDetails.name);
+// console.log(countryDetails["isRepublic"]);
+
+//upsert => update or insert
+// ?update
+
+countryDetails.name = "India";
+
+//? add
+
+countryDetails.continent = "Asia";
+
+console.log(countryDetails);
