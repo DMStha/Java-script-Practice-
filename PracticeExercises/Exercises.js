@@ -319,40 +319,78 @@ console.log(people); // Output will be sorted by age
 
 // console.log(countryDetails);
 
-const laptopDetails = {
-  name: " GF75 ",
-  brand: "MSI",
-  ram: 16,
-  ssd: 512,
-  display: 15.3,
-  graphics: "NVIDIA GeForce RTX 3060",
-  battery: "51 Whr",
-  processor: "i7 107OH",
+// const laptopDetails = {
+//   name: " GF75 ",
+//   brand: "MSI",
+//   ram: 16,
+//   ssd: 512,
+//   display: 15.3,
+//   graphics: "NVIDIA GeForce RTX 3060",
+//   battery: "51 Whr",
+//   processor: "i7 107OH",
+// };
+
+// // ? display laptop name with battery capacity
+
+// console.log(laptopDetails.name);
+// console.log(laptopDetails.battery);
+
+// console.log(
+//   `${laptopDetails.name} has ${laptopDetails.battery} battery capacity`
+// );
+
+// // ?change ram size to 18 gigs
+
+// laptopDetails.ram = 18;
+
+// // ?add another property called  memoryFrequency with 3200MHz value
+
+// laptopDetails.memoryFrequency = "3200MHz";
+
+// // ? add another property called weight whose value is 3kg
+
+// laptopDetails.weight = "3 kg";
+
+// // ? update ssd size by 300 GB
+
+// laptopDetails.ssd += " 300GB";
+
+// console.log(laptopDetails);
+
+/*
+
+2.Create an object named myHouseDetails and add following properties
+numberOfRooms
+numberOfMembers
+colorOfHouse
+builtYear
+numberOfStorey
+
+A.Delete numberOfMembers property
+B.Update numberOfRooms by new value
+            C.Add a  new property called estimatedPriceOfHouse
+D.Print out all properties on the console like “I have a green coloured house        with 9 rooms where 10 people are  living. The house is 3 storey and was built in 2011 with an estimated budget of 2 crores.”
+*/
+
+myHouseDetails = {
+  numberOfRooms: 20,
+  numberOfMembers: 12,
+  colorOfHouse: "Orange",
+
+  builtYear: 2001,
+  numberOfStorey: 7,
 };
+//   b
 
-// ? display laptop name with battery capacity
+myHouseDetails.numberOfRooms = 25;
 
-console.log(laptopDetails.name);
-console.log(laptopDetails.battery);
+//c
+myHouseDetails.estimatedPriceOfHouse = "20Crore";
+
+//d
 
 console.log(
-  `${laptopDetails.name} has ${laptopDetails.battery} battery capacity`
+  `I have ${myHouseDetails.colorOfHouse} coloured house with ${myHouseDetails.numberOfRooms} rooms where ${myHouseDetails.numberOfMembers} people live. The house is ${myHouseDetails.numberOfStorey} storey and was built in ${myHouseDetails.builtYear} with an estimated budget of ${myHouseDetails.estimatedPriceOfHouse}`
 );
 
-// ?change ram size to 18 gigs
-
-laptopDetails.ram = 18;
-
-// ?add another property called  memoryFrequency with 3200MHz value
-
-laptopDetails.memoryFrequency = "3200MHz";
-
-// ? add another property called weight whose value is 3kg
-
-laptopDetails.weight = "3 kg";
-
-// ? update ssd size by 300 GB
-
-laptopDetails.ssd = "300GB";
-
-console.log(laptopDetails);
+console.log(myHouseDetails);
