@@ -349,7 +349,7 @@ laptopDetails.memoryFrequency = "3200MHz";
 
 // ? add another property called weight whose value is 3kg
 
-laptopDetails.weight = "300GB";
+laptopDetails.weight = "3 kg";
 
 // ? update ssd size by 300 GB
 
