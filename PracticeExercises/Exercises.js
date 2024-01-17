@@ -370,8 +370,8 @@ A.Delete numberOfMembers property
 B.Update numberOfRooms by new value
             C.Add a  new property called estimatedPriceOfHouse
 D.Print out all properties on the console like “I have a green coloured house        with 9 rooms where 10 people are  living. The house is 3 storey and was built in 2011 with an estimated budget of 2 crores.”
-*/
 
+? assignment 
 myHouseDetails = {
   numberOfRooms: 20,
   numberOfMembers: 12,
@@ -394,3 +394,19 @@ console.log(
 );
 
 console.log(myHouseDetails);
+
+
+*/
+
+//  ? nested object
+
+const studentDetails = {
+  fName: "Diom",
+  lName: "Shrestha",
+  age: 22,
+  collage: "University of Sunderland",
+  address: {
+    temporary: "London", // nested object
+    permanent: "Kathmandu",
+  },
+};
