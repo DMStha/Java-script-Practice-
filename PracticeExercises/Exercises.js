@@ -413,6 +413,7 @@ console.log(myHouseDetails);
 
 // console.log(studentDetails);
 
+/*
 const laptop1 = {
   name: "Mac Book pro",
   brand: "Apple ",
@@ -438,3 +439,16 @@ laptop2.name = "dell";
 laptop2.storage.ssd = 1020;
 
 console.log(laptop2);
+*/
+
+// destructure
+
+const laptop1 = {
+  name: "Mac Book pro",
+  brand: "Apple ",
+  model: "2023",
+};
+
+const { name, brand, model } = laptop1;
+
+console.log(name, brand, model);
