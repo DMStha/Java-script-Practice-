@@ -400,13 +400,41 @@ console.log(myHouseDetails);
 
 //  ? nested object
 
-const studentDetails = {
-  fName: "Diom",
-  lName: "Shrestha",
-  age: 22,
-  collage: "University of Sunderland",
-  address: {
-    temporary: "London", // nested object
-    permanent: "Kathmandu",
+// const studentDetails = {
+//   fName: "Diom",
+//   lName: "Shrestha",
+//   age: 22,
+//   collage: "University of Sunderland",
+//   address: {
+//     temporary: "London", // nested object
+//     permanent: "Kathmandu",
+//   },
+// };
+
+// console.log(studentDetails);
+
+const laptop1 = {
+  name: "Mac Book pro",
+  brand: "Apple ",
+  model: "2023",
+  storage: {
+    ram: 12,
+    ssd: 512,
   },
 };
+
+//?copy by value, copy by reference shallow copy
+//const laptop2 = laptop1;
+
+//? spread operator {...}
+// const laptop2 = { ...laptop1 };
+// laptop2.name = "Dell";
+
+//?structured clone deep copy
+
+const laptop2 = structuredClone(laptop1);
+
+laptop2.name = "dell";
+laptop2.storage.ssd = 1020;
+
+console.log(laptop2);
