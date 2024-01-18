@@ -443,6 +443,7 @@ console.log(laptop2);
 
 // destructure
 
+/*
 const laptop1 = {
   name: "Mac Book pro",
   brand: "Apple ",
@@ -463,3 +464,22 @@ const {
 console.log(name, brand, model);
 
 console.log(ram, ssd);
+
+*/
+
+const student1 = {
+  firstName: "Saron",
+  lastName: "Shrestha  ",
+
+  address: {
+    temporary: "A",
+    permanent: " B",
+  },
+};
+
+const {
+  firstName: fName, //remaining
+  address: { temporary: tempAdd }, //double destructure
+} = student1;
+
+console.log(fName, tempAdd);
