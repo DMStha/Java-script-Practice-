@@ -447,8 +447,19 @@ const laptop1 = {
   name: "Mac Book pro",
   brand: "Apple ",
   model: "2023",
+  storage: {
+    ram: 12,
+    ssd: 512,
+  },
 };
 
-const { name, brand, model } = laptop1;
+const {
+  name,
+  brand,
+  model,
+  storage: { ram, ssd }, // double destructure
+} = laptop1;
 
 console.log(name, brand, model);
+
+console.log(ram, ssd);
