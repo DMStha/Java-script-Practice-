@@ -503,8 +503,68 @@ console.log(ram, ssd);
 
 // console.log(scoreList[2]);
 
-const catBrands = ["Honda", "Toyota", "BYD", "Tesla", "Hyundai", "Tata"];
+// const catBrands = ["Honda", "Toyota", "BYD", "Tesla", "Hyundai", "Tata"];
 
-for (let i = 0; i >= catBrands.length - 1; i++) {
-  console.log(carBrand);
-}
+// for (let i = 0; i >= catBrands.length - 1; i++) {
+//   console.log(carBrand);
+//}
+
+const studentList = ["Prithiv"];
+
+// //? push => add elements to end the array
+
+// studentList.push("Arun");
+
+// studentList.push("Rina", "Sona");
+
+// //?[pop => removed last inem foen]
+
+// studentList.pop();
+
+//? unshift => adds items  tok the start of array
+
+// studentList.unshift("Manish ");
+
+//?shift => removes item from the start of the array
+// studentList.shift
+
+// console.log(studentList);
+
+//?map =>
+
+//original array and returned array have same length/ size
+// const scores = [25, 35, 45, 55, 65, 75];
+
+// scores.map((item, index, self) => {
+//   console.log(item);
+// });
+
+//newScores =
+
+// const newScores = scores.map((item, index, self) => {
+//   let newScores = item - 5;
+//   return newScores;
+// });
+
+// console.log(newScores);
+
+// const marks = [80, 85, 70, 60, 90];
+
+// const newMarks = marks.map((item) => item - 5);// const add = (a, b) => a + b; // one liner arrow function
+
+// console.log(newMarks);
+
+let nameList = ["Diom", "Diwas", "Pravin"];
+
+// let newNameList = nameList.map((item, index, self) => item.toLowerCase());
+
+let newNameList = nameList.map((item, index, self) => {
+  if (item === "Diom") {
+    return item;
+  } else {
+    let newItem = item.toLowerCase();
+    return newItem;
+  }
+});
+
+console.log(newNameList);
