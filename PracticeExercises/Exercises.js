@@ -467,19 +467,44 @@ console.log(ram, ssd);
 
 */
 
-const student1 = {
-  firstName: "Saron",
-  lastName: "Shrestha  ",
+// const student1 = {
+//   firstName: "Saron",
+//   lastName: "Shrestha  ",
 
-  address: {
-    temporary: "A",
-    permanent: " B",
-  },
-};
+//   address: {
+//     temporary: "A",
+//     permanent: " B",
+//   },
+// };
 
-const {
-  firstName: fName, //remaining
-  address: { temporary: tempAdd }, //double destructure
-} = student1;
+// const {
+//   firstName: fName, //remaining
+//   address: { temporary: tempAdd }, //double destructure
+// } = student1;
 
-console.log(fName, tempAdd);
+// console.log(fName, tempAdd);
+
+//array
+
+//c=> collection of same data type
+// js=> collection of any datatype
+
+//? JS supports mixed datatypes
+
+// const randomArray = [11, "Nepal", true, null, undefined];
+
+// console.log(randomArray);
+
+// const scoreList = [45, 65, 75, 85];
+// we can access the values in array using array
+//and index always starts with zero
+
+//array length => total number of items in array
+
+// console.log(scoreList[2]);
+
+const catBrands = ["Honda", "Toyota", "BYD", "Tesla", "Hyundai", "Tata"];
+
+for (let i = 0; i >= catBrands.length - 1; i++) {
+  console.log(carBrand);
+}
