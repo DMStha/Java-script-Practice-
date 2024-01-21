@@ -576,10 +576,50 @@ const studentList = ["Prithiv"];
 
 //make an array of numbers that double the items
 
-const numList = [10, 20, 30, 1, 2, 3, 4, 5, 6];
+// const numList = [10, 20, 30, 1, 2, 3, 4, 5, 6];
 
-const newNumList = numList.map((item) => {
-  let newItem = item + item; //let newItem = item *2;
-  return newItem;
-});
-console.log(newNumList);
+// const newNumList = numList.map((item) => {
+//   let newItem = item + item; //let newItem = item *2;
+//   return newItem;
+// });
+// console.log(newNumList);
+
+//
+//make an array of numbers and print wheather the numbers are odd or even
+// const checkOddOrEven = (numbers) => {
+//   if (numbers % 2 === 0) {
+//     return (result = "even");
+//   } else {
+//     return (result = "odd");
+//   }
+// };
+// const numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+// numbers.forEach((item) => {
+//   const result = checkOddOrEven(item);
+//   console.log(`${item} is ${result}`);
+// });
+
+//filter => filters out value from array
+//map is used to change the value of array and form new array where filter does't change the array but filters the value as per condition
+// const numList = [11, 12, -12, -14, 15, 16, -17];
+// const newNumList = numList.filter((item) => {
+//   if (item > 0) {
+//     return item;
+//   }
+// });
+// console.log(newNumList);
+
+// const newNumList = numList.filter((item) => item > 0);
+// console.log(newNumList);
+// console.log();
+
+//get an array with even sores
+const scoreList = [25, 26, 78, 7, 35, 47, 55];
+// const newScoreList = scoreList.filter((item) => {
+//   return item % 2 === 0;
+// });
+// console.log(newScoreList);
+
+const newScoreList = scoreList.filter((item) => item % 2 === 0);
+console.log(newScoreList);
