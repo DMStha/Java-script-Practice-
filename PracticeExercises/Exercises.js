@@ -554,17 +554,32 @@ const studentList = ["Prithiv"];
 
 // console.log(newMarks);
 
-let nameList = ["Diom", "Diwas", "Pravin"];
+// let nameList = ["Diom", "Diwas", "Pravin"];
 
 // let newNameList = nameList.map((item, index, self) => item.toLowerCase());
 
-let newNameList = nameList.map((item, index, self) => {
-  if (item === "Diom") {
-    return item;
-  } else {
-    let newItem = item.toLowerCase();
-    return newItem;
-  }
-});
+// let newNameList = nameList.map((item, index, self) => {
+//   if (item === "Diom") {
+//     return item;
+//   } else {
+//     let newItem = item.toLowerCase();
+//     return newItem;
+//   }
+// });
 
-console.log(newNameList);
+// console.log(newNameList);
+
+// const friendList = ["Diom", "Diwas"];
+// const newFriendList = friendList.forEach((item) => {
+//   console.log(item);
+// });
+
+//make an array of numbers that double the items
+
+const numList = [10, 20, 30, 1, 2, 3, 4, 5, 6];
+
+const newNumList = numList.map((item) => {
+  let newItem = item + item; //let newItem = item *2;
+  return newItem;
+});
+console.log(newNumList);
