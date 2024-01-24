@@ -621,5 +621,111 @@ const scoreList = [25, 26, 78, 7, 35, 47, 55];
 // });
 // console.log(newScoreList);
 
-const newScoreList = scoreList.filter((item) => item % 2 === 0);
-console.log(newScoreList);
+// const newScoreList = scoreList.filter((item) => item % 2 === 0);
+// console.log(newScoreList);
+
+// ? due to sudden rise in tax, add 10% to the price of each laptop
+let laptopList = [
+  {
+    name: "TUF F15",
+    brand: "asus",
+    price: 1044,
+  },
+  {
+    name: "GF63",
+    brand: "msi",
+    price: 900,
+  },
+  {
+    name: "macbook air m2",
+    brand: "apple",
+    price: 1400,
+  },
+  {
+    name: "nitro",
+    brand: "acer",
+    price: 800,
+  },
+
+  {
+    name: "inspiron 55",
+    brand: "dell",
+    price: 700,
+  },
+];
+const newPrice = laptopList.map((item) => {
+  console.log(item);
+  return item.price + item.price * 0.1; //(10/100)
+});
+
+console.log(newPrice);
+
+// ? decrease price of each laptop by 20 percent
+
+// ? remove laptops whose price is greater than 1000
+
+// ? remove laptops whose brand is apple
+
+// ? increase price of asus laptop by 5%
+
+// ? assignment
+
+// ? due to sudden rise in tax, add 10% to the price of each laptop
+
+// const newLaptopList = laptopList.map((item, index, self) => {
+//   let newPrice = item.price + 0.1 * item.price;
+
+//   let newItem = {
+//     ...item,
+//     price: newPrice, //replaces price with newPrice
+//   };
+
+//   return newItem;
+// });
+
+// console.log(newLaptopList);
+
+// ? decrease price of each laptop by 20 percent
+// const newLaptopList = laptopList.map((item, index, self) => {
+//   let newPrice = item.price - (20 / 100) * item.price;
+
+//   let newItem = { ...item, price: newPrice };
+
+//   return newItem;
+// });
+
+// console.log(newLaptopList);
+
+// ? remove laptops whose price is greater than 1000
+// const newLaptopList = laptopList.filter((item, index, self) => {
+//   if (item.price <= 1000) {
+//     return item;
+//   }
+// });
+
+// console.log(newLaptopList);
+// ? remove laptops whose brand is apple
+
+// const newLaptopList = laptopList.filter((item, index, self) => {
+//   if (item.brand !== "apple") {
+//     return item;
+//   }
+// });
+
+// console.log(newLaptopList);
+
+// ? increase price of asus laptop by 5%
+
+// const newLaptopList = laptopList.map((item, index, self) => {
+//   if (item.brand === "asus") {
+//     let newPrice = item.price + (5 / 100) * item.price;
+
+//     let newItem = { ...item, price: newPrice };
+
+//     return newItem;
+//   }
+
+//   return item;
+// });
+
+// console.log(newLaptopList);
