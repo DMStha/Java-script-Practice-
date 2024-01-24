@@ -805,3 +805,11 @@ const words = ["hello", "help", "hospital", "destroy", "present"];
 
 // console.log(studentData);
 // console.log(newStudentData);
+
+//? sort => for ascending order //   ./.sort.reverse(); for reverse
+
+const students = ["Diom", "Anup", "Liam"];
+
+// students.sort(); // ascending order
+students.sort().reverse();
+console.log(students);
