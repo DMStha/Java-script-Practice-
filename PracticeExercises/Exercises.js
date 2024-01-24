@@ -734,12 +734,43 @@ let laptopList = [
 
 const words = ["hello", "help", "hospital", "destroy", "present"];
 
-// const nweWords = words.filter((item) => {
+// const newWords = words.filter((item) => {
 //   if (item.length >= 6) {
 //     return item;
 //   }
 // });
 
-const nweWords = words.filter((item) => item.length >= 6); // one liner
+// const newWords = words.filter((item) => item.length >= 6); // one liner
 
-console.log(nweWords);
+// console.log(newWords);
+
+//? reduce
+
+const scores = [50, 55, 45, 72];
+
+// let sum = 0;
+// scores.map((item) => {
+//   sun = sum + item;
+//   return sum;
+// });
+
+// console.log(sum);
+
+// const totalValue = scores.reduce((sum, item, index, self) => {
+//   sum = sum + item;
+
+//   return sum;
+// });
+// console.log(totalValue);
+
+const values = [10, 25, 35, 5];
+
+//calculate total value by multiplying each other
+
+// const newValues = values.reduce((product, item, index, self) => {
+//   product = product * item;
+//   return product;
+// });
+
+const newValues = values.reduce((product, item) => product * item); // one liner
+console.log(newValues);
