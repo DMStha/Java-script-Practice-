@@ -653,12 +653,12 @@ let laptopList = [
     price: 700,
   },
 ];
-const newPrice = laptopList.map((item) => {
-  console.log(item);
-  return item.price + item.price * 0.1; //(10/100)
-});
+// const newPrice = laptopList.map((item) => {
+//   console.log(item);
+//   return item.price + item.price * 0.1; //(10/100)
+// });
 
-console.log(newPrice);
+// console.log(newPrice);
 
 // ? decrease price of each laptop by 20 percent
 
@@ -729,3 +729,17 @@ console.log(newPrice);
 // });
 
 // console.log(newLaptopList);
+
+// array of word 7
+
+const words = ["hello", "help", "hospital", "destroy", "present"];
+
+// const nweWords = words.filter((item) => {
+//   if (item.length >= 6) {
+//     return item;
+//   }
+// });
+
+const nweWords = words.filter((item) => item.length >= 6); // one liner
+
+console.log(nweWords);
