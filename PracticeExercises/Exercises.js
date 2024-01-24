@@ -746,7 +746,7 @@ const words = ["hello", "help", "hospital", "destroy", "present"];
 
 //? reduce
 
-const scores = [50, 55, 45, 72];
+// const scores = [50, 55, 45, 72];
 
 // let sum = 0;
 // scores.map((item) => {
@@ -763,7 +763,7 @@ const scores = [50, 55, 45, 72];
 // });
 // console.log(totalValue);
 
-const values = [10, 25, 35, 5];
+// const values = [10, 25, 35, 5];
 
 //calculate total value by multiplying each other
 
@@ -789,19 +789,19 @@ const values = [10, 25, 35, 5];
 
 //?spread operator
 
-let newScores = [...scores];
+// let newScores = [...scores];
 
-newScores[0] = 5;
-console.log(newScores);
+// newScores[0] = 5;
+// console.log(newScores);
 
 //?structuredClone
 //? when array has object or array inside
 
-const studentData = [{ name: "A" }, { name: "B" }];
+// const studentData = [{ name: "A" }, { name: "B" }];
 
-const newStudentData = structuredClone(studentData);
+// const newStudentData = structuredClone(studentData);
 
-newStudentData[0].name = "c";
+// newStudentData[0].name = "c";
 
-console.log(studentData);
-console.log(newStudentData);
+// console.log(studentData);
+// console.log(newStudentData);
