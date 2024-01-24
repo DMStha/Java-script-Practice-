@@ -772,5 +772,13 @@ const values = [10, 25, 35, 5];
 //   return product;
 // });
 
-const newValues = values.reduce((product, item) => product * item); // one liner
-console.log(newValues);
+// const newValues = values.reduce((product, item) => product * item); // one liner
+// console.log(newValues);
+
+//? array destructure
+
+const numbers = [15, 16, 17];
+
+const [num1, num2, num3] = [15, 16, 17];
+
+console.log(num1, num3);
