@@ -775,10 +775,33 @@ const values = [10, 25, 35, 5];
 // const newValues = values.reduce((product, item) => product * item); // one liner
 // console.log(newValues);
 
-//? array destructure
+// //? array destructure
 
-const numbers = [15, 16, 17];
+// const numbers = [15, 16, 17];
 
-const [num1, num2, num3] = [15, 16, 17];
+// const [num1, num2, num3] = [15, 16, 17];
 
-console.log(num1, num3);
+// console.log(num1, num3);
+
+//?array copy
+
+// address copy
+
+//?spread operator
+
+let newScores = [...scores];
+
+newScores[0] = 5;
+console.log(newScores);
+
+//?structuredClone
+//? when array has object or array inside
+
+const studentData = [{ name: "A" }, { name: "B" }];
+
+const newStudentData = structuredClone(studentData);
+
+newStudentData[0].name = "c";
+
+console.log(studentData);
+console.log(newStudentData);
