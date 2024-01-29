@@ -808,8 +808,8 @@ const words = ["hello", "help", "hospital", "destroy", "present"];
 
 //? sort => for ascending order //   ./.sort.reverse(); for reverse
 
-const students = ["Diom", "Anup", "Liam"];
+// const students = ["Diom", "Anup", "Liam"];
 
 // students.sort(); // ascending order
-students.sort().reverse();
-console.log(students);
+// students.sort().reverse();
+// console.log(students);
